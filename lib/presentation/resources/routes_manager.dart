@@ -35,7 +35,6 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const MainView());
       case Routes.storeDetailsRoute:
         return MaterialPageRoute(builder: (_) => const StoreDetailsView());
-
       default:
         return undefinedRoute();
     }
