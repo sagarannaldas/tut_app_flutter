@@ -15,6 +15,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_svg: ^1.1.6
 
   flutter_lints: ^2.0.0
 
@@ -28,6 +29,10 @@ flutter:
      - assets/images/onboarding_logo2.svg
      - assets/images/onboarding_logo3.svg
      - assets/images/onboarding_logo4.svg
+     - assets/images/hollow_circle_ic.svg
+     - assets/images/solid_circle_ic.svg
+     - assets/images/left_arrow_ic.svg
+     - assets/images/right_arrow_ic.svg
 
    fonts:
     - family: Montserrat
