@@ -19,12 +19,12 @@ class Contacts {
   late String phone;
   late String link;
 
-  Contacts(this.email, this.phone, this.link);
+  Contacts(this.phone, this.email, this.link);
 }
 
 class Authentication {
-  late Customer customer;
-  late Contacts contacts;
+  late Customer? customer;
+  late Contacts? contacts;
 
   Authentication(this.customer, this.contacts);
 }
