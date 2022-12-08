@@ -4,7 +4,7 @@ import 'package:tut_app_flutter/presentation/onboarding/onboarding_viewmodel.dar
 import 'package:tut_app_flutter/presentation/resources/assets_manager.dart';
 import 'package:tut_app_flutter/presentation/resources/strings_manager.dart';
 import 'package:tut_app_flutter/presentation/resources/values_manager.dart';
-import '../../domain/model.dart';
+import '../../domain/model/model.dart';
 import '../resources/color_manager.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

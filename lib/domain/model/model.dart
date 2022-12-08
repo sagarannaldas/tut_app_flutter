@@ -28,3 +28,11 @@ class Authentication {
 
   Authentication(this.customer, this.contacts);
 }
+
+class DeviceInfo {
+  late String name;
+  late String identifier;
+  late String version;
+
+  DeviceInfo(this.name, this.identifier, this.version);
+}

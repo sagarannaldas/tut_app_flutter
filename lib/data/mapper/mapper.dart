@@ -1,7 +1,7 @@
 //to convert the response into a non nullable object (model)
 
 import 'package:tut_app_flutter/app/extensions.dart';
-import 'package:tut_app_flutter/domain/model.dart';
+import 'package:tut_app_flutter/domain/model/model.dart';
 
 import '../responses/responses.dart';
 
