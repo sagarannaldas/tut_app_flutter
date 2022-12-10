@@ -8,6 +8,8 @@ import '../../domain/model/model.dart';
 import '../resources/color_manager.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../resources/routes_manager.dart';
+
 class OnBoardingView extends StatefulWidget {
   const OnBoardingView({Key? key}) : super(key: key);
 
@@ -72,7 +74,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacementNamed(context, Routes.loginRoute);
+                  },
                   child: Text(
                     AppStrings.skip,
                     textAlign: TextAlign.right,
