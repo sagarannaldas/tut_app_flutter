@@ -6,6 +6,8 @@ import 'package:tut_app_flutter/data/network/app_api.dart';
 import 'package:tut_app_flutter/data/network/dio_factory.dart';
 import 'package:tut_app_flutter/data/repository/repository_impl.dart';
 import 'package:tut_app_flutter/domain/repository/repository.dart';
+import 'package:tut_app_flutter/domain/usecase/login_usecase.dart';
+import 'package:tut_app_flutter/presentation/login/login_viewmodel.dart';
 
 import '../data/data_source/remote_data_source.dart';
 import '../data/network/network_info.dart';
@@ -41,4 +43,11 @@ Future<void> initAppModule() async {
   // repository
   instance.registerLazySingleton<Repository>(
       () => RepositoryImpl(instance(), instance()));
+}
+
+initLoginModule() {
+  if (!GetIt.I.isRegistered<LoginUseCase>()) {
+    instance.registerFactory<LoginUseCase>(() => LoginUseCase(instance()));
+    instance.registerFactory<LoginViewModel>(() => LoginViewModel(instance()));
+  }
 }
